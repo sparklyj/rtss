@@ -101,7 +101,7 @@ DWORD WINAPI ThreadProc(LPVOID param)
 			RegSetKeyValueA(HKEY_CURRENT_USER, "Software\\RTSS_Crosshair", "size", REG_DWORD, &crossSize, (DWORD)sizeof(crossSize));
 		}
 
-		if (GetAsyncKeyState(VK_RCONTROL) && GetAsyncKeyState(VK_NUMPAD5)) {
+		if (GetAsyncKeyState(VK_RCONTROL) && GetAsyncKeyState(VK_UP)) {
 			RECT rect;
 			if (GetClientRect(GetForegroundWindow(), &rect)) //GetClientRect GetWindowRect
 			{
